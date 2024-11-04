@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #004d40; /* Darker green */
+    color: white;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1.venture-name {
+    flex: 1;
+    font-size: 2em;
+    color: #e8f5e9;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #e0f2f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #b2dfdb;
+}
+
+/* Content Section */
+.content-section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Images */
+.large-image {
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Solution and Benefit Containers */
+.solution-container, .benefit-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.solution-box, .benefit-box {
+    width: 40%; /* Adjust as needed */
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.solution-box img, .benefit-box img {
+    width: 80%; /* General size for solution and benefit images */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.education-image {
+    width: 50%; /* Specific size for the education image */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.solution-box-center {
+    width: 70%; /* Center the educational image */
+    margin: 0 auto; /* Centering the box */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #004d40; /* Dark green background */
+    padding: 50px 0; /* Added padding for top and bottom */
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p {
+    color: white; /* White color for contact info */
+}
+
+.contact-image {
+    width: 400%;
+    max-width: 1200px; /* Very large size */
+    margin-top: 30px;
+    border-radius: 200px;
+}
+
+/* Login Section */
+#login form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#login div {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .solution-box, .benefit-box {
+        width: 90%; /* Make boxes full width on smaller screens */
+    }
+    
+    .education-image {
+        width: 80%; /* Adjust education image size for smaller screens */
+    }
+}
